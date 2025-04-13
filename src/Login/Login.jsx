@@ -33,17 +33,12 @@ const [cred, setCred] = useState([]);
 
   const log = () => {
     const isValid = cred.some(c => c.user === username && c.passw === password);
-    if (isValid ) {
-        
-
-      setMessage('✅ Login successful!');
-          navigate('/App');
-
-    } 
-    if( username === Mcet && password === Mcet){
-
-      navigate('/App');
-    }
+if (isValid) {
+  setMessage('✅ Login successful!');
+  navigate('/App');
+} else if (username === "Mcet" && password === "mcet") {
+  setMessage('✅ Login successful as Admin!');
+  navigate('/App');
     else {
       setMessage('❌ Invalid credentials');
     }
@@ -77,7 +72,7 @@ const [cred, setCred] = useState([]);
           <p>{message}</p>
 
          <br/>
-          <span>Default username & password : Mcet-Mcet</span>
+          <span>Default username & password : Mcet-mcet </span>
       
         </div>
       </div>
