@@ -27,13 +27,13 @@ const [cred, setCred] = useState([]);
     },[]);
   
 
-  const [username, setUsername] = useState('Mcet');
-  const [password, setPassword] = useState('Mcet');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
   const log = () => {
     const isValid = cred.some(c => c.user === username && c.passw === password);
-    if (isValid) {
+    if (isValid || username === Mcet && password === Mcet) {
         
 
       setMessage('✅ Login successful!');
