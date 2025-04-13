@@ -38,7 +38,8 @@ if (isValid) {
   navigate('/App');
 } else if (username === "Mcet" && password === "mcet") {
   setMessage('✅ Login successful as Admin!');
-  navigate('/App');
+  navigate('/App');}
+ 
     else {
       setMessage('❌ Invalid credentials');
     }
