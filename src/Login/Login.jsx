@@ -67,9 +67,13 @@ const [cred, setCred] = useState([]);
           <br />
 <label style={{ marginRight: '30px', paddingTop: '10px' }}>New User?</label>
           <Link style={{textDecoration:'none'}} to="/signup">Signup</Link>
-         <p>Defaul username & password : Mcet-Mcet</p>
+        
     
           <p>{message}</p>
+
+         <br/>
+          <span>Defaul username & password : Mcet-Mcet</span>
+      
         </div>
       </div>
     </>
