@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" );
+*{
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body
+{
+  margin: 0;
+  padding: 0%;
+ background-image: url('assets/bg.jpg');
+ background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.input-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cityInput{
+  flex:1;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  
+}
+.search-icon{
+  cursor: pointer;
+}
+.search-icon img{
+  margin-right: 20px;
+}
+.image{
+  text-align: center;
+  margin-top: 15px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.des{
+  text-align: center;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+.image img{
+  width: 160px;
+  height: 160px;
+}
+
+.temp,
+.region,
+.country{
+  margin-top: 5px;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.temp{
+  font-weight: 500;
+}
+.region
+{
+  color: rgb(152, 152, 5);
+  font-weight: 400;
+  font-size: 40px;
+}
+.country{
+  font-size: 16px;
+  color: #888;
+  font-weight: 500;
+}
+.latlon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  margin-top: 10px;
+  text-align: center;
+}
+.latlon div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.latlon div span{
+  font-size: 14px;
+}
+.humidity-percent,
+.wind-percent,
+.latlon div span:nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  padding-top: 5px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+.ele{
+  text-align: center;
+
+}
+.text{
+  font-size: 12px;
+  color: #888;
+
+}

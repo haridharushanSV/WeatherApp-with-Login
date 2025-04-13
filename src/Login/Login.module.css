@@ -1,0 +1,32 @@
+.head{
+    display: flex;
+    
+    justify-content: center;
+}
+.log{
+    background-color: rgba(242, 242, 235, 0.436);
+    height: 230px;
+    width: 200px;
+    padding: 30px;
+}
+.form input{
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 10px;
+        border: none;
+    
+}
+.form button{
+    margin-top: 20px;
+    color: rgb(14, 15, 15);
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+.form button:hover{
+background-color: azure;
+color: black;
+
+
+}
